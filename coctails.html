@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>coctails</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			margin: 0;
+		}
+		.wrapper{
+			margin: 50px auto;
+			width:80%;
+		}
+		.buttons{
+			display: flex;
+			flex-flow: row nowrap;
+		}
+		.btn{
+			width:25%;
+			background-color: #fff;
+			border:solid 2px rgb(211, 48, 108);
+			min-height: 40px;
+			color:rgb(211, 48, 108);
+			box-shadow: 0 7px 10px 0 rgba(211, 48, 108, 0.2);
+			cursor: pointer;
+			font-weight: bold;
+		}
+		.btn-enter{
+			border-radius: 5px 0 0 5px;
+			border-right: none;
+		}
+		.btn-list{
+			border-radius: 0 5px 5px 0;
+			border-left: none;
+		}
+		.btn-recipe{
+			border-right: none;
+		}
+		.btn:hover{
+			background-color:rgb(211, 48, 108);
+			color:#fff;
+		}
+		.btn:active{
+			box-shadow: none;
+		}
+		.block{
+			border:solid 2px rgb(211, 48, 108);
+			border-radius: 5px 5px;
+			box-shadow: 0 7px 10px 0 rgba(211, 48, 108, 0.2);
+			padding: 10px;
+			display:none;
+			color:rgb(211, 48, 108);
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="wrapper">
+		<div class="buttons">
+			<button class="btn btn-enter">Ввод рецепта</button>
+			<button class="btn btn-recipe">Рецепт напитка</button>
+			<button class="btn btn-delete">Удаление рецепта</button>
+			<button class="btn btn-list">Перечень всех коктейлей</button>
+		</div>
+		<div class="block cocktail-recipe"></div>
+		<div class="block delete-message"></div>
+		<div class="block cocktails-list"></div>
+	</div>
+
+	<script type="text/javascript" src="HashStorage.js" ></script>
+</body>
+</html> 
